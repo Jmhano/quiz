@@ -1,0 +1,46 @@
+:root {
+    --background-color: rgb(18, 18, 52);
+    --primary-text: rgb(231, 217, 217);
+    --fun-color: aquamarine;
+    --secondary-color: grey; 
+  
+  
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 5px;
+    background-color: var(--background-color);
+    color: var(--primary-text);
+    text-align: center;
+  }
+
+.choice-container {
+    display: flex; 
+    margin-bottom: 0.1rem;
+    width: 100%;
+    font-size: medium;
+    border: 1px solid var(--fun-color);
+   
+}
+
+.choice-container:hover {
+    box-shadow: 0 0.4rem 1.4rem var(--secondary-color);
+
+}
+
+.choice-prefix {
+    padding: 1.5rem 2.5rem;
+    background-color: var(--secondary-color) ;
+}
+
+
+
+.choice-text {
+    display: flex; 
+    margin-bottom: 0.1rem;
+    width: 100%;
+    font-size: medium;
+    padding: 1.5rem;
+}

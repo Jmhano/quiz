@@ -1,0 +1,56 @@
+:root {
+  --background-color: rgb(18, 18, 52);
+  --primary-text: rgb(231, 217, 217);
+  --fun-color: aquamarine; 
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 10;
+  padding: 10;
+  background-color: var(--background-color);
+  color: var(--primary-text);
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.btn {
+  font-size: medium;
+  color: var(--primary-text);
+  border: 1px solid var(--fun-color);
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px var(--primary-text);
+}
+
+.flex-column {
+    display: flex;
+   flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+.text-center {
+   text-align: center;
+}
+
+.hidden {
+    display: none;
+}
