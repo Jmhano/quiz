@@ -8,7 +8,7 @@ let acceptingAnswers = true;
 let score = 0;
 let questionCounter = 0;
 let availableQuestions = [];
-let startTimer = 20;
+let startTimer = 30;
 
 let questions = [
   {
@@ -43,7 +43,7 @@ let questions = [
   {
     question:
       "Which of the following methods can be used to display data in some form using Javascript?",
-    choice1: "document.white()",
+    choice1: "document.write()",
     choice2: "console-log()",
     choice3: "window-alert()",
     choice4: "All of the above",
@@ -74,8 +74,8 @@ var startGame = function () {
 
 var getNewQuestion = function () {
   if (availableQuestions.lenth === 0 || questionCounter > MAX_QUESTIONS)
-    return window.location.assign("./develop/end.html");
-
+  return window.location.assign("score.html");
+  localStorage.setItem("mostRecentScore", score);
   questionCounter++;
 
   var questionIndex = Math.floor(Math.random() * availableQuestions.length);
@@ -98,7 +98,6 @@ choices.forEach((choice) => {
     acceptingAnswers = false;
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset["number"];
-    console.log(selectedAnswer == currentQuestion.answer);
 
     var answerToApply = "incorrect";
     if (selectedAnswer == currentQuestion.answer) {
