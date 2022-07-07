@@ -1,0 +1,13 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../../Challenges/04-Web-APIs/02-Challenge"
+	},
+	{
+		"path": "../../../../../../taskinator/taskinator"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "02-Challenge"
+  }
+}
